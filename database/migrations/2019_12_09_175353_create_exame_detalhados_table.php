@@ -14,9 +14,9 @@ class CreateExameDetalhadosTable extends Migration
     public function up()
     {
         Schema::create('exame_detalhados', function (Blueprint $table) {
-            $table->bigIncrements('id_ExDetalhado');
+            $table->bigIncrements('id');
             $table->unsignedbigInteger('id_Exame');
-            $table->foreign('id_Exame')->references('id_Exame')->on('Exames');
+            $table->foreign('id_Exame')->references('id')->on('exames');
             $table->timestamps();
         });
     }

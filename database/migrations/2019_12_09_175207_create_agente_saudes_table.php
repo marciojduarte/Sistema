@@ -14,7 +14,7 @@ class CreateAgenteSaudesTable extends Migration
     public function up()
     {
         Schema::create('agente_saudes', function (Blueprint $table) {
-            $table->bigIncrements('id_Agente');
+            $table->bigIncrements('id');
             $table->string('Nome');
             $table->string('Telefone');
             $table->string('Regiao');

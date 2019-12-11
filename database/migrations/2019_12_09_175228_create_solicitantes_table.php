@@ -15,6 +15,9 @@ class CreateSolicitantesTable extends Migration
     {
         Schema::create('solicitantes', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('Nome');
+            $table->string('Matricula');
+            $table->string('Contato');
             $table->timestamps();
         });
     }
